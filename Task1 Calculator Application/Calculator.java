@@ -81,8 +81,7 @@ public class Calculator {
 	                        break;
 	                }
 	            } catch (ArithmeticException e) {
-	                
-	                System.out.println("Error: " + e.getMessage());
+	               e.printStackTrace();
 	            }
 	            System.out.print("Do you want to perform another operation? (yes/no): ");
 	            String response = scanner.next();
