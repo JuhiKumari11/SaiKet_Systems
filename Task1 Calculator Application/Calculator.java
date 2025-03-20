@@ -8,13 +8,10 @@ public class Calculator {
 	    public static double subtract(double a, double b) {
 	        return a - b;
 	    }
-
 	   
 	    public static double multiply(double a, double b) {
 	        return a * b;
 	    }
-
-	  
 	    public static double divide(double a, double b) throws ArithmeticException {
 	        if (b == 0) {
 	            throw new ArithmeticException("Cannot divide by zero!");
@@ -35,16 +32,10 @@ public class Calculator {
 	    public static void main(String[] args) {
 	        Scanner scanner = new Scanner(System.in);
 	        boolean continueCalculation = true;
-
 	        while (continueCalculation) {
-	           
 	            displayMenu();
-
-	         
 	            System.out.print("Enter your choice (1-5): ");
 	            int choice = scanner.nextInt();
-
-	            
 	            if (choice == 5) {
 	                System.out.println("Thank you for using the calculator");
 	                continueCalculation = false;
@@ -57,7 +48,6 @@ public class Calculator {
 	            double b = scanner.nextDouble();
 
 	            try {
-	                
 	                double result = 0;
 	                switch (choice) {
 	                    case 1:
